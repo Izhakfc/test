@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  ​<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container" style="border:2px solid black"  >
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center text-light" style="background-image: url(https://ichef.bbci.co.uk/news/640/cpsprodpb/238D/production/_95410190_gettyimages-488144002.jpg">
+        <span><h1>FIFA Player Performance<br>Dashboard</h1></span>
+        <p>Use the interactive charts below to explore the players results</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well">
+          <h5>Player Name:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary border-success">
+          <div class="panel-heading  bg-success">
+            <h3 class="panel-title bg-success">Player Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bubble"></div>
+      </div>
+      <div class="col-md-3">
+        <img id="img-id" src="image.jpg" class="img-fluid img-thumbnail rounded-lg m-3 p-1 border-success">
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="bar"></div>
+      </div>
+
+      <div class="col-md-6">
+        <div id="gauge"></div>
+      </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts.js"></script>
+  
+
+</body>
+
+</html>
